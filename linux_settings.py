@@ -9,7 +9,7 @@ import math
 import socket
 
 #################################################################
-linux_settings = """ 
+linux_settings_ico = """ 
                      _     ___ _   _ _   ___  __
                     | |   |_ _| \ | | | | \ \/ /
                     | |    | ||  \| | | | |\  / 
@@ -39,7 +39,7 @@ linux_settings = """
 			5) CONTACT
 """
 ###############################################################
-hostname_settings_text = """
+hostname_settings_ico = """
 #########################################################
 #          HOSTNAME SETTINGS - GH0ST S0FTWARE           #
 ######################################################### 
@@ -53,7 +53,7 @@ hostname_settings_text = """
 #########################################################
 """
 ###############################################################
-dns_settings_text = """
+dns_settings_ico = """
 #########################################################
 #             DNS SETTINGS - GH0ST S0FTWARE             #
 ######################################################### 
@@ -67,7 +67,7 @@ dns_settings_text = """
 #########################################################                                                               
 """
 ###############################################################
-soureslist_settings_text = """
+soureslist_settings_ico = """
 #########################################################
 #        SOURCES LIST SETTINGS - GH0ST S0FTWARE         #
 ######################################################### 
@@ -81,7 +81,7 @@ soureslist_settings_text = """
 #########################################################                                                               
 """
 ###############################################################
-contact_text = """
+contact_ico = """
 ######################################################### 
 #                       CONTACT                         #
 #########################################################
@@ -93,7 +93,7 @@ contact_text = """
 ######################################################### 
 """
 ###############################################################
-terminal_settings_text = """
+terminal_settings_ico = """
 #########################################################
 #        TERMINAL TEXT SETTINGS - GH0ST S0FTWARE        #
 ######################################################### 
@@ -107,12 +107,12 @@ terminal_settings_text = """
 #########################################################
 """
 ###############################################################
-print linux_settings
+print linux_settings_ico
 islem = input("Yapmak İstediğiniz İşlem Numarasını Giriniz : ")
 os.system('cls' if os.name == 'nt' else 'clear')
 ###############################################################
 if islem == 1:	
-	print hostname_settings_text
+	print hostname_settings_ico
 	os.system("/etc/hostname")
 	hostname = raw_input("Yeni hostname adinizi giriniz : ")
 	hostnamefile = open("/etc/hostname", "w")
@@ -122,7 +122,7 @@ if islem == 1:
 	hostnamefile.close()
 ###############################################################
 if islem == 2:
-	print dns_settings_text
+	print dns_settings_ico
 	os.system("/etc/resolv.conf")
 	dns = raw_input("Bir dns adresi giriniz : ")
 	dnsfile = open("/etc/resolv.conf", "w")
@@ -132,7 +132,7 @@ if islem == 2:
 	dnsfile.close()
 ###############################################################
 if islem == 3:
-	print soureslist_settings_text
+	print soureslist_settings_ico
 	os.system("/etc/apt/sources.list")
 	source_name = raw_input("Kaynak icin bir isim belirleyiniz : ")
 	source = raw_input("Bir kaynak giriniz : ")
@@ -143,7 +143,7 @@ if islem == 3:
 	source_file.close()
 ###############################################################
 if islem == 4:
-	print terminal_settings_text
+	print terminal_settings_ico
 	os.system("/etc/bash.bashrc")
 	terminal_text = raw_input("Ternimal yazisi icin bir isim belirleyiniz : ")
 	terminal_text_settings_file = open("/etc/bash.bashrc", "a")
@@ -153,5 +153,5 @@ if islem == 4:
 	terminal_text_settings_file.close()
 ###############################################################
 if islem == 5:
-	print contact_text
+	print contact_ico
 ###############################################################
